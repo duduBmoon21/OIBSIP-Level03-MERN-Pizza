@@ -1,0 +1,80 @@
+.verify_container { 
+	width: 100%;
+	min-height: 100vh;
+	background-color: #f5f5f5;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.verify_form_container {
+	width: 400px; /* Adjust width as needed */
+	height: 400px; /* Adjust height as needed */
+	display: flex;
+	border-radius: 10px;
+	box-shadow: 0px 3px 3px -2px rgb(0 0 0 / 20%),
+		0px 3px 4px 0px rgb(0 0 0 / 14%), 
+		0px 1px 8px 0px rgb(0 0 0 / 12%);
+	background-color: white; /* Background for the form */
+}
+
+.form_container {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	width: 100%; /* Full width of the container */
+	padding: 20px; /* Padding around the form elements */
+}
+
+.form_container h1 {
+	font-size: 30px; /* Font size for the title */
+	margin-bottom: 20px; /* Space below the title */
+}
+
+.input {
+	outline: none;
+	border: 1px solid #ccc; /* Border color for inputs */
+	width: 100%; /* Full width of the input */
+	padding: 15px;
+	border-radius: 10px;
+	background-color: #edf5f3;
+	margin: 10px 0; /* Spacing between inputs */
+	font-size: 14px;
+}
+
+.error_msg {
+	width: 370px;
+	padding: 15px;
+	margin: 5px 0;
+	font-size: 14px;
+	background-color: #f34646;
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.success_msg {
+	width: 370px;
+	padding: 15px;
+	margin: 10px 0;
+	font-size: 14px;
+	background-color: #4caf50; /* Green background for success */
+	color: white;
+	border-radius: 5px;
+	text-align: center;
+}
+
+.verify_btn {
+	border: none;
+	outline: none;
+	padding: 12px 0;
+	background-color: #3bb19b; /* Green background for button */
+	border-radius: 20px;
+	width: 100%; /* Full width of the button */
+	color: white; /* Button text color */
+	font-weight: bold;
+	font-size: 14px;
+	cursor: pointer;
+	margin-top: 10px; /* Space above the button */
+}
