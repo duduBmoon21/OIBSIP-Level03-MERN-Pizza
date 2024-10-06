@@ -1,6 +1,8 @@
 import React from 'react'
 import styles from "../components/styleAuth/main.styles.module.css";
-import PizzaDashboard from "./users/PizzaDashboard";
+// import PizzaDashboard from "./users/PizzaDashboard";
+import PizzaBuilder from './users/PizzaBuilder';
+import PizzaList from './users/PizzaList';
 
 function Dashboard() {
   const handleLogout = () => {
@@ -19,7 +21,8 @@ function Dashboard() {
 			</nav>
       <h2>Dashboard</h2>
       <p>Welcome to the pizza dashboard! Choose your pizza ingredients here.</p>
-      <PizzaDashboard />
+      <PizzaBuilder />
+	  <PizzaList />
 		</div>
 
   )

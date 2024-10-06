@@ -3,7 +3,7 @@ const dotenv = require('dotenv');
 const cors = require('cors');
 const mongoose = require('mongoose');
 const authRoutes = require('./routes/auth');
-
+const pizzaRoutes= require('./routes/pizzaRoutes')
 dotenv.config();
 
 const app = express();
@@ -14,7 +14,7 @@ app.use(cors());
 
 // Routes
 app.use('/api/auth', authRoutes);
-
+app.use('/api/auth/pizza',pizzaRoutes);
 // Connect to MongoDB and start server
 
 mongoose.connect(process.env.MONGO_URI, { })

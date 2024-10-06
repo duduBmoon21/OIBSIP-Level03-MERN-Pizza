@@ -83,7 +83,7 @@ exports.login = async (req, res) => {
       res.status(500).json({ message: 'Login failed', error });
     }
   };
-  
+
 // Email verification logic
 exports.verifyOTP = async (req, res) => {
   const { email, otp } = req.body;

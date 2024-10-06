@@ -8,6 +8,7 @@ import Signup from './Signup';
 import VerifyOTP from './VerifyOTP';
 import PizzaDashboard from './users/PizzaDashboard';
 import AdminDashboard from './admin/AdminDashboard';
+import HomeScreen from './HomeScreen';
 
 function Home() {
   const [isAdmin, setIsAdmin] = useState(false);
@@ -33,6 +34,7 @@ function Home() {
           <Route path="/login" element={ <Login />} />
           <Route path="/signup" element={<Signup />} />
           <Route path="/verify-otp" element={ <VerifyOTP />} />
+          <Route path="/home-screen" element={ <HomeScreen />} />
 
           {/* Protected User Routes */}
           <Route
